@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="wireframe.css" type="text/css" rel="stylesheet">
+  <title>Roslyn Park Website</title>
+</head>
+<body>
+  <header>
+    <h1>Roslyn Park Website</h1>
+  </header>
+  <canvas id="Roslyn" width="200" height="200" style="border: 1px solid #000000;">
+  </canvas>
+  <script>
+    var canvas = document.getElementById("Roslyn");
+    var ctx = canvas.getContext("2d");
+    var img = new Image();
+
+    img.onload = function() {
+      ctx.drawImage(img, 1, 1);
+    };
+    img.src = 'https://graph.facebook.com/601228763347553/picture?type=large';
+  </script>
+  <div class="information">
+    <div>This college is made specifically for people who have either intellectual disabilities or have struggled with collge in the past regardless of age.</div>
+    <div>You will be able to study a variety of courses that fit your skills.</div>
+  </div>
+  <h5>Phone Number: (01) 261 3400</h5>
+  <body>
+    <h5>Contact Us: </h5>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <label for="password">Password:</label><br>
+      <input type="text" id="pword" name="pword"><br>
+      <button type="button">Submit</button>
+    </form>
+  </body>
+  <footer>
+    <h5 <a href="https://twitter.com/RehabGroup">Social Media | Search</a></h5>
+    <h5><a href="https://www.rehab.ie/national-learning-network/find-a-course/our-centres/national-learning-network-roslyn-park-college.html">About Us</a></h5>
+    <h5>Address: Roslyn Park, Beach Road, Dublin 4</h5>
+    <h5>© Roslyn Park</h5>
+  </footer>
+</body>
+</html>

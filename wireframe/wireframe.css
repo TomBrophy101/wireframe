@@ -1,0 +1,52 @@
+html {
+  font-family: "Verdana";
+  font-size: 15px;
+}
+
+body {
+  min-width: 250px;
+}
+
+header {
+  text-align: center;
+  font-size: 25px;
+  color: cyan;
+  background-color: magenta;
+}
+
+canvas#Roslyn {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 200px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: auto;
+  z-index: 100;
+  position: relative;
+  padding: 15px;
+  max-width: 100%;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-gap: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: grey;
+}
+
+footer h5 {
+  color: white;
+  font-size: 15px;
+}

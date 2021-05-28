@@ -36,6 +36,18 @@
       <input type="text" id="email" name="email"><br>
       <label for="password">Password:</label><br>
       <input type="text" id="pword" name="pword"><br>
+      <input type="password" id="myInput" value="FakePSW"><br>
+      <input type="checkbox" onclick="Password()">Show Password<br>
+      <script>
+        function Password() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+      </script><br>
       <button type="button">Submit</button>
     </form>
   </body>
